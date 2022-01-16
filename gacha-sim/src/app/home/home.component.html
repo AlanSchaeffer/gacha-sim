@@ -1,0 +1,18 @@
+<div>
+    <p>Gacha simulator! Configure settings and then simulate</p>
+
+    <p>Current configuration is:</p>
+
+    <ul>
+        <li>{{ configuration.players }} player{{ configuration.players > 1 ? 's' : ''}}</li>
+        <li>Precision is {{ configuration.gachaPrecision }}</li>
+        <li>Prize generation algorithm is {{ configuration.type }}</li>
+        <li>
+            Prizes:
+            <ul>
+                <li *ngFor="let prize of configuration.prizes">{{ prize.name }} with {{ prize.rate }}% drop rate</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+

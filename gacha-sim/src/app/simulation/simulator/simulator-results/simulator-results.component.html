@@ -1,0 +1,6 @@
+<p>Results:</p>
+<div class="results-container">
+    <div *ngFor="let result of context.results">
+        <app-simulator-player [result]="result"></app-simulator-player>
+    </div>
+</div>

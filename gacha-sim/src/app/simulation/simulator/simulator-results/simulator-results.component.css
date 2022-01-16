@@ -1,0 +1,13 @@
+:host {
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    flex: 0 0 auto;
+}
+
+.results-container {
+    flex: 1 0 0;
+    overflow: auto;
+}

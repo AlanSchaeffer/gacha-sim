@@ -1,0 +1,13 @@
+<div [formGroup]="formGroup" class="gacha-config-prizes-list">
+    
+    <p>Prizes:</p>
+
+    <div class="prizes-container">
+        <div formArrayName="prizes" *ngFor="let prize of prizesForm['controls']; let i = index">
+            <app-prize [prize]="prize" [formGroup]="asGroup(prize)" [formGroupName]="i" (onDelete)="deleteItem($event)"></app-prize>
+        </div>
+    </div>
+    
+
+    <button type="button" (click)="addPrize()">Add</button>
+</div>

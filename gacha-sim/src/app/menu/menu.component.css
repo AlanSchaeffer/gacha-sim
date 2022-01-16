@@ -1,0 +1,22 @@
+:host {
+    border: 1px solid black;
+}
+
+.menu {
+    width: 200px;
+    height: 100%;
+}
+
+.menu a {
+    color: black;
+    display: block;
+    border: 1px solid gray;
+    width: 100%;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+}
+
+.menu a.current {
+    background-color: lightgrey;
+}

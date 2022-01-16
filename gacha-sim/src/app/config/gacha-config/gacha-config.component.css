@@ -1,0 +1,27 @@
+:host {
+    height: 100%;
+}
+
+.gacha-config {
+    width: 600px;
+    border: 1px solid black;
+}
+
+.gacha-config form {
+    padding: 10px;
+}
+
+.gacha-config div.field {
+    height: 25px;
+    border-bottom: 1px dotted black;
+    margin-bottom: 5px;
+}
+.gacha-config div.field label {
+    float: left;
+    width: 200px;
+    height: 15px;
+}
+
+.gacha-config .prizes-div {
+    margin-bottom: 5px;
+}

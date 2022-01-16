@@ -1,0 +1,11 @@
+:host {
+    border: 1px solid black;
+}
+
+div {
+    width: 600px;
+    height: 100%;
+}
+div p {
+    margin: 5px;
+}

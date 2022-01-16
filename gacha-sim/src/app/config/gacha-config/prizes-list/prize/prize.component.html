@@ -1,0 +1,7 @@
+<div [formGroup]="formGroup" class="gacha-config-prize">
+    <label for="name">Name:</label>
+    <input id="name" type="text" placeholder="Item name" formControlName="name"/>
+    <label for="rate">Drop rate:</label>
+    <input id="rate" type="number" placeholder="Drop rate in %" formControlName="rate"/>
+    <button type="button" (click)="remove()">Remove</button>
+</div>

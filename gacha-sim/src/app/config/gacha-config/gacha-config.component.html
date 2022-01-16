@@ -1,0 +1,25 @@
+<div class="gacha-config">
+    <form [formGroup]="configForm" (ngSubmit)="onSubmit()">
+        <h1>Gacha Configuration</h1>
+        <div class="field">
+            <label for="players">Players:</label>
+            <input id="players" type="number" formControlName="players"/>
+        </div>
+        <div class="field">
+            <label for="gachaPrecision">Precision:</label>
+            <input id="gachaPrecision" type="number" formControlName="gachaPrecision"/>
+        </div>
+        <div class="field">
+            <label for="type">Type:</label>
+            <select id="type" formControlName="type">
+                <option value="STACKED">Stacked</option>
+                <option value="RANDOM">Random</option>
+            </select>
+        </div>
+        <div class="prizes-div">
+            <app-prizes-list [formGroup]="configForm"></app-prizes-list>
+        </div>
+
+        <button type="submit">Save</button>
+    </form>
+</div>

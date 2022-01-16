@@ -1,0 +1,4 @@
+<h1>Simulate gacha</h1>
+<p>{{ configuration.players }} people will play</p>
+<button type="button" [disabled]="running" (click)="simulate()">Start</button>
+<app-simulator-results [context]="context"></app-simulator-results>

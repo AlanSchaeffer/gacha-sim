@@ -1,0 +1,18 @@
+.gacha-config-prizes-list {
+    border: 1px dashed black;
+    padding: 3px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+}
+
+.gacha-config-prizes-list p {
+    font-weight: bold;
+}
+
+.gacha-config-prizes-list .prizes-container {
+    border-bottom: 1px dotted black;
+    margin-bottom: 10px;
+    overflow: auto;
+    flex: 1;
+}

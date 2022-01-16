@@ -1,0 +1,13 @@
+<p>Pulls needed to clear prize pool: {{result.totalPulls}}</p>
+<p>Amounts of prizes:</p>
+<ul>
+    <li *ngFor="let prize of totalPrizes">
+        {{prize.name}}: {{prize.times}} time{{prize.times > 1 ? 's' : ''}}
+    </li>
+</ul>
+<p>Pulls in order:</p>
+<ul>
+    <li *ngFor="let prize of result.prizes">
+        {{prize.name}} at pull# {{prize.pullNum}}
+    </li>
+</ul>

@@ -1,0 +1,17 @@
+.gacha-config-prize {
+    border: 1px dotted black;
+    margin: 2px;
+    padding: 2px;
+}
+
+.gacha-config-prize label {
+    margin-right: 5px;
+}
+
+.gacha-config-prize input {
+    width: 100px;
+    margin-right: 35px;
+}
+.gacha-config-prize button {
+    float: right;
+}
